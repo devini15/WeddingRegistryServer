@@ -12,7 +12,7 @@ export default {
 
     try {
       const body = await request.json();
-      const response = await fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzCh51QFqE_xgWjMLZnI3_XhdvjMXWvDYmhrCgkDyPDO7sk6nI7q-K1oHoXbAfsSF6h/exec", {
         method: "POST",
         headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify(body)
