@@ -1,4 +1,14 @@
 export default {
+const express = require("express");
+const cors = require("cors");
+const { fetch } = require("undici");
+
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
   async fetch(request) {
     console.log("Received request:", request); // Logs the request
 
